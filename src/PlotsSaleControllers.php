@@ -1,6 +1,6 @@
 <?php
 
-namespace ronannc\plugin_lumen\Http\Controllers;
+namespace ronannc\plugin_lumen;
 
 use App\Http\Controllers\Controller;
 use ronannc\plugin_lumen\Services\PlotsSaleService;
