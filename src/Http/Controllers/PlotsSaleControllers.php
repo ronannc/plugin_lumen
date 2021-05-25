@@ -13,7 +13,7 @@ class PlotsSaleControllers extends Controller
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
-    public function index()
+    public static function index()
     {
         //recuperando as credenciais de acesso (client_code, client_key) configuradas no env
         $client_key  = env( 'CLIENT_KEY', 'FC-SB-15' );
