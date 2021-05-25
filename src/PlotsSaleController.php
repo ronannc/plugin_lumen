@@ -1,6 +1,6 @@
 <?php
 
-namespace Ronan\PluginLumen;
+namespace Ronannc\PluginLumen;
 
 use Laravel\Lumen\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\Http;

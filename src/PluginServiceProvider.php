@@ -1,6 +1,6 @@
 <?php
 
-namespace Ronan\PluginLumen;
+namespace Ronannc\PluginLumen;
 
 use Illuminate\Support\ServiceProvider;
 
