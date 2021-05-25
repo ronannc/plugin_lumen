@@ -3,7 +3,6 @@
 namespace ronannc\plugin_lumen\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use ronannc\plugin_lumen\Services\PlotsSaleService;
 
 class PlotsSaleControllers extends Controller
@@ -23,15 +22,11 @@ class PlotsSaleControllers extends Controller
     /**
      * Função responsavel por listar as vendas e suas parcelas
      *
-     * @param Request $request
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
-    public function index(Request $request)
+    public function index()
     {
-        //recuperando filtros
-        $params = $request->all();
-
         //chamada para o serviço fazer a requisição http com os parametros passados
-        return $this->service->getPlotsSale($params);
+        return $this->service->getPlotsSale();
     }
 }

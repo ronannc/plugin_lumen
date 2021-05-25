@@ -17,7 +17,7 @@ class PlotsSaleService
      * @param $params
      * @return array|mixed
      */
-    public function getPlotsSale( $params )
+    public function getPlotsSale( )
     {
 
         //recuperando as credenciais de acesso (client_code, client_key) configuradas no env
