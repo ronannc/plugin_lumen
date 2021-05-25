@@ -16,3 +16,4 @@ class PluginServiceProvider extends ServiceProvider
 
     }
 }
+
