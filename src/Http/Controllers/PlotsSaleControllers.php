@@ -1,11 +1,12 @@
 <?php
 
-namespace Ronannc\PluginLumen;
+namespace Ronannc\PluginLumen\Http\Controllers;
 
-use Laravel\Lumen\Routing\Controller as BaseController;
+
 use Illuminate\Support\Facades\Http;
+use JohnDoe\BlogPackage\Http\Controllers\Controller;
 
-class PlotsSaleController extends BaseController
+class PlotsSaleControllers extends Controller
 {
 
     /**
