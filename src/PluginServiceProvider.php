@@ -28,7 +28,7 @@ class PluginServiceProvider extends ServiceProvider
         include __DIR__.'/routes/web.php';
 
         // Let Laravel Ioc Container know about our Controller
-        $this->app->make('Ronannc\PluginLumen\Http\Controllers\PlotsSaleController');
+        $this->app->make('Ronannc\PluginLumen\Http\Controllers\PlotsSaleControllers');
     }
 
 
