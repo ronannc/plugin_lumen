@@ -25,7 +25,7 @@ class PluginServiceProvider extends ServiceProvider
     public function register()
     {
         include __DIR__ . '/web.php';
-        $this->app->make('Ronan\PluginLumen\PlotsSaleController');
+        $this->app->make('Ronannc\PluginLumen\PlotsSaleController');
     }
 }
 
