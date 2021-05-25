@@ -1,22 +1,31 @@
 <?php
 
-namespace ronannc\plugin_lumen;
+namespace Ronan\PluginLumen;
 
 use Illuminate\Support\ServiceProvider;
 
-
-class   PluginServiceProvider extends ServiceProvider
+class PluginServiceProvider extends ServiceProvider
 {
+
+    /**
+     * Bootstrap the application services.
+     *
+     * @return void
+     */
     public function boot()
     {
 
     }
+
+    /**
+     * Register the application services.
+     *
+     * @return void
+     */
     public function register()
     {
         include __DIR__ . '/web.php';
-
-        // Let Laravel Ioc Container know about our Controller
-        $this->app->make('ronannc/plugin_lumen/PlotsSaleControllers');
+        $this->app->make('Ronan\PluginLumen\PlotsSaleController');
     }
 }
 

@@ -11,13 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "ronannc\\plugin_lumen\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "ronannc\\plugin_lumen\\": "packages/ronannc/plugin_lumen/src",
-            "Tests\\": "tests/"
+            "Ronannc\\PluginLumen\\": "src/"
         }
     }
 }
