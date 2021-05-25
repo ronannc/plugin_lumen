@@ -20,7 +20,7 @@ class PlotsSaleService
      */
     public function getPlotsSale($params)
     {
-        try {
+
             //recuperando as credenciais de acesso (client_code, client_key) configuradas no env
             $client_key = env('CLIENT_KEY', 'FC-SB-15');
             $client_code = env('CLIENT_CODE', '6ea297bc5e294666f6738e1d48fa63d2');
@@ -38,11 +38,6 @@ class PlotsSaleService
 //                'per_page' => $params['per_page'] ?? null,
 //                'dt_venda' => $params['dt_venda'] ?? null,
             ])->json();
-        } catch ( \Exception $exception ) {
-            return [
-                'error'   => true,
-                'message' => $exception->getMessage()
-            ];
-        }
+
     }
 }
