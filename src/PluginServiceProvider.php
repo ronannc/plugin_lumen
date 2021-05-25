@@ -7,14 +7,29 @@ use Illuminate\Support\ServiceProvider;
 
 class PluginServiceProvider extends ServiceProvider
 {
-    public function register()
-    {
-
-    }
-
+    /**
+     * Bootstrap the application services.
+     *
+     * @return void
+     */
     public function boot()
     {
-        $this->loadRoutesFrom( __DIR__ . '/routes/web.php' );
+
     }
+
+    /**
+     * Register the application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        //Register Our Package routes
+        include __DIR__.'/routes/web.php';
+
+        // Let Laravel Ioc Container know about our Controller
+        $this->app->make('Ronannc\PluginLumen\Http\Controllers\PlotsSaleController');
+    }
+
 
 }
