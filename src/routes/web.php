@@ -6,4 +6,4 @@ use Ronannc\PluginLumen\Http\Controllers\PlotsSaleControllers;
 /**
  * Rota de listagem de parcelas de venda
  */
-Route::get( 'plots-sale', [ PlotsSaleControllers::class, 'index' ] );
+Route::get( '/plots-sale', [ PlotsSaleControllers::class, 'index' ] );

@@ -4,18 +4,9 @@ namespace Ronannc\PluginLumen\Http\Controllers;
 
 
 use Illuminate\Support\Facades\Http;
-use JohnDoe\BlogPackage\Http\Controllers\Controller;
 
 class PlotsSaleControllers extends Controller
 {
-
-    /**
-     * PlotsSaleControllers constructor.
-     *
-     */
-    public function __construct()
-    {
-    }
 
     /**
      * Função responsavel por listar as vendas e suas parcelas
