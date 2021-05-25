@@ -29,7 +29,7 @@ class PluginServiceProvider extends ServiceProvider
     {
         return [
             'prefix' => '',
-            'middleware' => ['web'],
+            'middleware' => '',
         ];
     }
 }
