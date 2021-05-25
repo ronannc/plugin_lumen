@@ -1,6 +1,5 @@
 <?php
 
-
 /**
  * Rota de listagem de parcelas de venda
  */

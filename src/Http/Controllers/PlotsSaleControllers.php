@@ -21,7 +21,7 @@ class PlotsSaleControllers extends Controller
         $client_code = env( 'CLIENT_CODE', '6ea297bc5e294666f6738e1d48fa63d2' );
         $base_uri    = env( 'BASE_URI', 'https://api-sandbox.fpay.me/' );
 
-        //requisição http /parcelas
+        //requisição http /vendas
         return Http::withHeaders( [
             'Content-Type' => 'application/json',
             'Client-Code'  => $client_code,
