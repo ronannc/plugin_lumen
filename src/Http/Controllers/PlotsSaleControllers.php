@@ -17,9 +17,9 @@ class PlotsSaleControllers extends Controller
     {
         $params = $request->all();
         //recuperando as credenciais de acesso (client_code, client_key) configuradas no env
-        $client_key  = env( 'CLIENT_KEY', 'FC-SB-15' );
-        $client_code = env( 'CLIENT_CODE', '6ea297bc5e294666f6738e1d48fa63d2' );
-        $base_uri    = env( 'BASE_URI', 'https://api-sandbox.fpay.me/' );
+        $client_key  = config( 'plugin_ronan.CLIENT_KEY' );
+        $client_code = config( 'plugin_ronan.CLIENT_CODE' );
+        $base_uri    = config( 'plugin_ronan.BASE_URI' );
 
         //requisição http /vendas
         return Http::withHeaders( [
