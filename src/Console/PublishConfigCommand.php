@@ -31,9 +31,9 @@ class PublishConfigCommand extends Command
         $this->info('Publish config files');
 
         (new Publisher($this))->publishFile(
-            realpath(__DIR__.'/../../config/').'/config.php',
+            realpath(__DIR__.'/..').'/config/plugin_lumen.php',
             base_path('config'),
-            'config.php'
+            'plugin_lumen.php'
         );
     }
 }

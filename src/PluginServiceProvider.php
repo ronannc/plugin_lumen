@@ -9,9 +9,6 @@ use Ronannc\PluginLumen\Console\PublishConfigCommand;
 
 class PluginServiceProvider extends ServiceProvider
 {
-    const CONFIG_FOLDER_NAME = 'config';
-
-
     /**
      * Bootstrap the application services.
      *
@@ -32,7 +29,7 @@ class PluginServiceProvider extends ServiceProvider
         //Register Our Package routes
         include __DIR__.'/routes/web.php';
 
-        $configPath = __DIR__.'/config/config.php';
+        $configPath = __DIR__ . '/config/plugin_lumen.php';
         $this->mergeConfigFrom($configPath, 'config');
 
         $this->app->singleton('command.plugin_lumen.publish-config', function () {
