@@ -4,6 +4,7 @@ namespace Ronannc\PluginLumen;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
+use Ronannc\PluginLumen\Console\PublishConfigCommand;
 
 
 class PluginServiceProvider extends ServiceProvider
