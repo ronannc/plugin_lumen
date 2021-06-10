@@ -27,6 +27,11 @@ Na parte de Register Service Providers, cole a linha:
 ```python
 $app->register(\Ronannc\PluginLumen\PluginServiceProvider::class);
 ```
+E na parte de Register Config Files, cole a linha:
+```python
+$app->configure('plugin_lumen');
+```
+
 Insira no seu .env as credenciais de acesso (CLIENT_CODE, CLIENT_KEY e BASE_URI)
 
 ```python
