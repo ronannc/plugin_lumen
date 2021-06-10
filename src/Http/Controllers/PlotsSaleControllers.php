@@ -17,9 +17,9 @@ class PlotsSaleControllers extends Controller
     {
         $params = $request->all();
         //recuperando as credenciais de acesso (client_code, client_key) configuradas no env
-        $client_key  = config( 'config.CLIENT_KEY' );
-        $client_code = config( 'config.CLIENT_CODE' );
-        $base_uri    = config( 'config.BASE_URI' );
+        $client_key  = config( 'plugin_lumen.CLIENT_KEY' );
+        $client_code = config( 'plugin_lumen.CLIENT_CODE' );
+        $base_uri    = config( 'plugin_lumen.BASE_URI' );
 
         //requisição http /vendas
         return Http::withHeaders( [
