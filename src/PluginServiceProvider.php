@@ -15,7 +15,7 @@ class PluginServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/config/plugin_ronan.php' => config_path('plugin_ronan.php'),
+            __DIR__ . '/config/config.php' => $this->app->configPath('plugin_ronan.php'), 'config'
         ]);
     }
 
